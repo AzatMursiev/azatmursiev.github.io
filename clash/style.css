@@ -1,0 +1,330 @@
+* {
+    scroll-behavior: smooth;
+}
+
+head {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.header {
+    background: url(img/hero_bg_clashroyale.jpg) no-repeat center/cover;
+    height: 100vh;
+}
+
+.logo {
+    width: 320px;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    max-width: inherit;
+    margin-left: -15px;
+    background: black;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+}
+
+.icon {
+    width: 70px;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    margin: 0;
+}
+
+.menu__link {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+    opacity: .5;
+
+    transition: .5s;
+}
+
+.menu__link:hover {
+    opacity: 1;
+}
+
+/* animate */
+
+.animate {
+    padding: 100px 0;
+    border-bottom: 2px solid gray;
+}
+
+.animate__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.animate__img {
+    max-width: 350px;
+}
+
+.animate__content {
+    max-width: 500px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.animate__text {
+    line-height: 24px;
+}
+
+.store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apple {
+    max-width: 150px;
+}
+
+.google {
+    max-width: 190px;
+}
+
+/* launch */
+
+.launch__inner {
+    background: url(img/bg_timeline_clashroyale.png) no-repeat bottom 50px right/400px, url(img/bg_games_timeline_bar.png) no-repeat bottom 130px left/100%;
+    position: relative;
+    padding: 100px 0 250px;
+}
+
+.launch__contant {
+    max-width: 400px;
+}
+
+.launch__text {
+    line-height: 24px;
+}
+
+.linear__items {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 130px;
+    padding-left: 0;
+}
+
+.linear__element {
+    border-left: 1px solid gray;
+    padding: 0 60px 30px 15px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* see */
+
+.see {
+    background: url(img/2nd_anniversary_inside2.jpg) no-repeat center/cover;
+    padding: 100px 0;
+    width: 100%;
+    position: relative;
+}
+
+.see:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.see__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    z-index: 2;
+}
+
+.see__img {
+    max-width: 350px;
+    position: relative;
+    z-index: 2;
+}
+
+.see__content {
+    max-width: 500px;
+    margin: auto 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.see__text {
+    margin-bottom: 50px;
+}
+
+.see__link {
+    color: rgb(192, 29, 0);
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 50px;
+
+    transition: .5s;
+}
+
+.see__link:hover {
+    font-size: 16px;
+}
+
+/* footer */
+
+.footer {
+    background-color: black;
+    padding: 30px 0;
+    color: white;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social__telegram {
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .animate {
+        padding: 80px 0 20px;
+    }
+    
+    .animate__inner {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .animate__content {
+        margin: 30px 0;
+        text-align: center;
+    }
+    
+    .store {
+        justify-content: center;
+    }
+
+    /* launch */
+    .launch__inner {
+        background: url(img/bg_timeline_clashroyale.png) no-repeat bottom 120px right/400px, url(img/bg_games_timeline_bar.png) no-repeat bottom 50px left/100%;
+        padding: 60px 0 500px;
+    }
+    
+    .launch__contant {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .linear__items {
+        bottom: 50px;
+    }
+    
+    .linear__element {
+        max-width: 60px;
+        padding: 0 20px 20px 15px;
+        font-size: 12px;
+    }
+
+    /* see */
+
+    .see {
+        background: url(img/2nd_anniversary_inside2.jpg) no-repeat center/cover;
+        padding: 70px 0;
+        width: 100%;
+        position: relative;
+    }
+    
+    .see__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .see__content {
+        text-align: center;
+    }
+    
+    .see__text {
+        margin-bottom: 50px;
+    }
+
+    /* footer */
+
+    .footer {
+        background-color: black;
+        padding: 30px 0;
+        color: white;
+    }
+    
+    .footer__inner {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .menu {
+        padding-left: 5px;
+    }
+
+    .menu__link {
+        margin-right: 20px;
+    }
+    
+    /* footer */
+
+    .store {
+        margin-left: 20px;
+    }
+
+    .footer__inner {
+        justify-content: center;
+    }
+}
